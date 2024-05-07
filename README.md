@@ -1,7 +1,7 @@
 
 ![OCRREADER](https://i.imgur.com/CfclHq3.png)
 
-##                  OCRReader
+#                  OCRReader
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 ## What is OCReader
 OCRReader is an offline OCR Reader with 5 Langs with three levels and exporting feature. 
