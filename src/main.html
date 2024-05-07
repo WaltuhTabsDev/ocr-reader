@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Reader</title>
+	<link rel="stylesheet" href="./tacit.css"/>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="center">
+	<span> Image: </span>
+        <img id="imageContainer">
+        <div id="basic">
+		<input type="file" accept="image/png, image/jpeg" id="fileInput">
+            <select id="langSelect">
+                <option value="eng">English</option>
+                <option value="ara">Arabic</option>
+				<option value="rus">Russian</option>
+				<option value="jpn">Japanese</option>
+				<option value="chi_sim">Chinese</option>
+            </select>
+			<select id="levelSelect">
+                <option value="normal">Normal Reading(Faster)</option>
+                <option value="bad">Bad Reading(Fast)</option>
+				<option value="best">Best Reading(Slow)</option>
+            </select>
+            <button onclick="performOCR()" id="ocrButton">Perform OCR</button>
+        </div>
+        <select id="extractSelect">
+            <option value="">Select File Type</option>
+            <option value="txt">Text File (.txt)</option>
+            <option value="docx">Word Document (.docx)</option>
+        </select>
+        <button onclick="extractText()" id="extractButton">Extract Text</button>
+		<span id="errortext" style="color: red;"> </span>
+        <div id="content">
+            <div>
+                <div id="textOutput" class="output-box"></div>
+            </div>
+        </div>
+		   <a href="https://github.com/WaltuhTabsDev" target="_blank">Github!</a> 
+    </div>
+
+    <script src="./dist/dist-tesseract.min.js"></script>
+    <script src="./dist/worker.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
