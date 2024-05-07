@@ -1,3 +1,4 @@
+// Getting elements...
 const langSelect = document.getElementById('langSelect');
 const levelSelect = document.getElementById('levelSelect');
 const fileInput = document.getElementById('fileInput');
@@ -8,16 +9,18 @@ const imageContainer = document.getElementById('imageContainer');
 const textOutput = document.getElementById('textOutput');
 const errortext = document.getElementById('errortext');
 let extractedText = '';
-
+// Change the Display image when it get changed
 fileInput.addEventListener('change', function () {
   const file = fileInput.files[0];
   imageContainer.src = URL.createObjectURL(file);
 });
-
+// Perform OCR button function
 async function performOCR() {
+// Getting values
   const lang = langSelect.value;
   const level = levelSelect.value;
   let pathtolangs;
+// What folder to get tessdata from
   switch(level){
 	  case 'normal':
 	  pathtolangs = './lang';
