@@ -4,7 +4,8 @@
 #                  OCRReader
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 ## What is OCReader
-OCRReader is an offline OCR Reader with 5 Langs with three levels and exporting feature. 
+OCRReader is a simple offline OCR Reader with 5 Langs with three levels and exporting feature.
+I was planning on making it more advanced like spaces detecting and adding image to word but decided to do it later.
 ## How to use?
 Just download the Built one , You can build it yourself but use a localhost
 ## Why doesn't it work when using it on a browser
